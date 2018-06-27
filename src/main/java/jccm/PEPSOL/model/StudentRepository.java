@@ -1,6 +1,5 @@
-package jccm.PEPSOL.Repository;
+package jccm.PEPSOL.model;
 
-import jccm.PEPSOL.object.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

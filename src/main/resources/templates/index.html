@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>JCCM Tondo</title>
+    <link rel="stylesheet" href="../static/app.css" th:href="@{/css/app.css}" />
+    <script type="text/javascript" src="../static/js/angular.min.js" th:src="@{/js/angular.min.js}"></script>
+    <script type="text/javascript" src="../static/app/app.module.js" th:src="@{/app/app.module.js}"></script>
+    <script type="text/javascript" src="../static/app/student.controller.js" th:src="@{/app/student.controller.js}"></script>
+</head>
+<body ng-app="app" ng-controller="StudentController as vm">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 th:text="'Hello, '+ ${username}">Hello, Anonymous</h1>
+            <h3 th:text="${#dates.format(datetime,'MMMM dd, yyyy h:mm a')}">Today</h3>
+            <h4 th:if="${admin}">Admin</h4>
+            <h4 th:if="${!admin}">User</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>FIRST NAME</th>
+                        <th>LAST NAME</th>
+                        <th>BIRTH DATE</th>
+                        <th>CONTACT NUMBER</th>
+                        <th>ADDRESS</th>
+                        <th>CELL LEADER</th>
+                        <th>NETWORK LEADER</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody ng-repeat="student in vm.students">
+                    <td>{{student.firstName}}</td>
+                    <td>{{student.lastName}}</td>
+                    <td>{{student.birthDate}}</td>
+                    <td>{{student.contactNumber}}</td>
+                    <td>{{student.address}}</td>
+                    <td>{{student.cellLeader}}</td>
+                    <td>{{student.networkLeader}}</td>
+                    <td>
+                        <button class="btn btn-danger" ng-click="vm.deleteStudent(student.id)">Delete</button>
+                    </td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

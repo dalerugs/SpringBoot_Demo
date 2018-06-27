@@ -1,4 +1,4 @@
-package jccm.PEPSOL.object;
+package jccm.PEPSOL.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
