@@ -1,0 +1,10 @@
+/*C3*/SET SCHEMA PUBLIC
+drop table student if exists
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table student (id integer not null, address varchar(255), birth_date varchar(255), cell_leader varchar(255), contact_number varchar(255), first_name varchar(255), last_name varchar(255), network_leader varchar(255), primary key (id))
+INSERT INTO STUDENT VALUES(1,'Barrio Obrero, Tondo, Manila','1997-12-22','Anjo Mel Aloyan','09472199299','Patrick Dale','Rugayan','Anjo Mel Aloyan')
+INSERT INTO STUDENT VALUES(2,'Tondo, Manila','2000-12-12','Patrick Dale Rugayan','0987654322','Rudolf Christian','Dacay','Anjo Mel Aloyan')
+INSERT INTO STUDENT VALUES(3,'May Pajo, Caloocan','2001-07-12','Patrick Dale Rugayan','09876543212','Christian','Arnigo','Anjo Mel Aloyan')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT

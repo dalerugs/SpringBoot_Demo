@@ -1,6 +1,15 @@
 package jccm.PEPSOL.object;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Student {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
     private String firstName;
     private String lastName;
@@ -15,6 +24,16 @@ public class Student {
 
     public Student(int id, String firstName, String lastName, String birthDate, String contactNumber, String address, String cellLeader, String networkLeader) {
         this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthDate = birthDate;
+        this.contactNumber = contactNumber;
+        this.address = address;
+        this.cellLeader = cellLeader;
+        this.networkLeader = networkLeader;
+    }
+
+    public Student(String firstName, String lastName, String birthDate, String contactNumber, String address, String cellLeader, String networkLeader) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDate = birthDate;
