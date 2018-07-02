@@ -45,3 +45,7 @@ GRANT USAGE ON DOMAIN INFORMATION_SCHEMA.CHARACTER_DATA TO PUBLIC
 GRANT DBA TO SA
 SET SCHEMA SYSTEM_LOBS
 INSERT INTO BLOCKS VALUES(0,2147483647,0)
+SET SCHEMA PUBLIC
+INSERT INTO STUDENT VALUES(1,'Barrio Obrero, Tondo, Manila','1997-12-22','Anjo Mel Aloyan','09472199299','Patrick Dale','Rugayan','Anjo Mel Aloyan')
+INSERT INTO STUDENT VALUES(2,'Tondo, Manila','2000-12-12','Patrick Dale Rugayan','0987654322','Rudolf Christian','Dacay','Anjo Mel Aloyan')
+INSERT INTO STUDENT VALUES(3,'May Pajo, Caloocan','2001-07-12','Patrick Dale Rugayan','09876543212','Christian','Arnigo','Anjo Mel Aloyan')

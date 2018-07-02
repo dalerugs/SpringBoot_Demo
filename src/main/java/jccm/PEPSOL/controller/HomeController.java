@@ -19,7 +19,7 @@ public class HomeController {
     @RequestMapping("/")
     public String index(Model model){
         model.addAttribute("datetime",new Date());
-        model.addAttribute("username","dalerugs");
+        model.addAttribute("username","daleugs");
         model.addAttribute("admin",false);
         model.addAttribute("appMode",appMode);
         return "index";

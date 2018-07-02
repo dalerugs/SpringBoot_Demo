@@ -1,4 +1,4 @@
-/*C12*/SET SCHEMA PUBLIC
+/*C3*/SET SCHEMA PUBLIC
 drop table student if exists
 drop sequence hibernate_sequence if exists
 create sequence hibernate_sequence start with 1 increment by 1
@@ -8,3 +8,119 @@ INSERT INTO STUDENT VALUES(2,'Tondo, Manila','2000-12-12','Patrick Dale Rugayan'
 INSERT INTO STUDENT VALUES(3,'May Pajo, Caloocan','2001-07-12','Patrick Dale Rugayan','09876543212','Christian','Arnigo','Anjo Mel Aloyan')
 ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
 COMMIT
+DELETE FROM STUDENT WHERE ID=3
+COMMIT
+drop table student if exists
+drop sequence hibernate_sequence if exists
+DISCONNECT
+/*C4*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C5*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C6*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C7*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C8*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C9*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C10*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C11*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C12*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C13*/SET SCHEMA PUBLIC
+drop table student if exists
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table student (id integer not null, address varchar(255), birth_date varchar(255), cell_leader varchar(255), contact_number varchar(255), first_name varchar(255), last_name varchar(255), network_leader varchar(255), primary key (id))
+INSERT INTO STUDENT VALUES(1,'Barrio Obrero, Tondo, Manila','1997-12-22','Anjo Mel Aloyan','09472199299','Patrick Dale','Rugayan','Anjo Mel Aloyan')
+INSERT INTO STUDENT VALUES(2,'Tondo, Manila','2000-12-12','Patrick Dale Rugayan','0987654322','Rudolf Christian','Dacay','Anjo Mel Aloyan')
+INSERT INTO STUDENT VALUES(3,'May Pajo, Caloocan','2001-07-12','Patrick Dale Rugayan','09876543212','Christian','Arnigo','Anjo Mel Aloyan')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+drop table student if exists
+drop sequence hibernate_sequence if exists
+DISCONNECT
+/*C14*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C15*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C16*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C17*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C18*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C19*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C20*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C21*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C22*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C23*/SET SCHEMA PUBLIC
+drop table student if exists
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table student (id integer not null, address varchar(255), birth_date varchar(255), cell_leader varchar(255), contact_number varchar(255), first_name varchar(255), last_name varchar(255), network_leader varchar(255), primary key (id))
+INSERT INTO STUDENT VALUES(1,'Barrio Obrero, Tondo, Manila','1997-12-22','Anjo Mel Aloyan','09472199299','Patrick Dale','Rugayan','Anjo Mel Aloyan')
+INSERT INTO STUDENT VALUES(2,'Tondo, Manila','2000-12-12','Patrick Dale Rugayan','0987654322','Rudolf Christian','Dacay','Anjo Mel Aloyan')
+INSERT INTO STUDENT VALUES(3,'May Pajo, Caloocan','2001-07-12','Patrick Dale Rugayan','09876543212','Christian','Arnigo','Anjo Mel Aloyan')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+drop table student if exists
+drop sequence hibernate_sequence if exists
+DISCONNECT
+/*C24*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C25*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C26*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C27*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C28*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C29*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C30*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C31*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C32*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C33*/SET SCHEMA PUBLIC
+drop table student if exists
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table student (id integer not null, address varchar(255), birth_date varchar(255), cell_leader varchar(255), contact_number varchar(255), first_name varchar(255), last_name varchar(255), network_leader varchar(255), primary key (id))
+INSERT INTO STUDENT VALUES(1,'Barrio Obrero, Tondo, Manila','1997-12-22','Anjo Mel Aloyan','09472199299','Patrick Dale','Rugayan','Anjo Mel Aloyan')
+INSERT INTO STUDENT VALUES(2,'Tondo, Manila','2000-12-12','Patrick Dale Rugayan','0987654322','Rudolf Christian','Dacay','Anjo Mel Aloyan')
+INSERT INTO STUDENT VALUES(3,'May Pajo, Caloocan','2001-07-12','Patrick Dale Rugayan','09876543212','Christian','Arnigo','Anjo Mel Aloyan')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+drop table student if exists
+drop sequence hibernate_sequence if exists
+DISCONNECT
+/*C34*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C35*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C36*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C37*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C38*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C39*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C40*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C41*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C42*/SET SCHEMA PUBLIC
+DISCONNECT
